@@ -1,0 +1,36 @@
+<!--data is local template variable-->
+
+<form  #data="ngForm"  
+(ngSubmit)="addEmployee(data)">
+<h1>Angular 2 Operation</h1>
+    <div>   
+    <label>Name</label><br>
+     <input  type="text" ngModel name="name" [(ngModel)]="inputText">
+    </div>
+
+    <div>
+    
+    <label>Id</label><br>
+    <input type="number" ngModel name="id"  [(ngModel)]="inputId">
+    </div>    
+    
+    <div>
+    
+        <label>Salary</label><br>
+        <input type="number" ngModel name="salary" [(ngModel)]="inputSalary">
+    </div>
+    
+    <div>
+    
+        <label>Department</label><br>
+        <input type="text" ngModel name="department" [(ngModel)]="inputDepartment">
+    </div>
+    <input type="submit" value="submit" >
+           
+</form>
+
+ {{inputText}} {{inputId}} {{inputSalary}} {{inputDepartment}}
+
+<div *ngIf="addedEmp!==null">
+<h3>Employee Added</h3>  
+   
