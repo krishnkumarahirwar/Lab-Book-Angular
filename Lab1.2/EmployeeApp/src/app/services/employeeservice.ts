@@ -5,8 +5,8 @@ import { Employee } from '../model/employee';
 export class EmployeeService{
 
  store=[
-   new Employee(2,'abc',10000,"JAVA"),
-   new Employee(1,'vibhor',20000,"Angular")
+   new Employee(100,'krishna',2222,"rue"),
+   new Employee(101,'anirudh',20000,"dfdb")
 ];   
  
   addEmployee(emp:Employee):void{
